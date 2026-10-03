@@ -19,7 +19,7 @@ const CLIENT_SECRET = "tS5vOYDIf4aWwZJDtoSCnmAT7M02woPN";
 // ganti bagian ini.
 // Contoh:
 // https://balita-bot-tiktok.onrender.com
-const DOMAIN = "https://GANTI-DOMAIN-RENDER";
+const DOMAIN = "https://sport-sad-monkey.abasthan.app/";
 
 const REDIRECT_URI = `${DOMAIN}/callback`;
 
