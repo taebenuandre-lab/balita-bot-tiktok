@@ -19,7 +19,7 @@ const CLIENT_SECRET = "tS5vOYDIf4aWwZJDtoSCnmAT7M02woPN";
 // ganti bagian ini.
 // Contoh:
 // https://balita-bot-tiktok.onrender.com
-const DOMAIN = "https://sport-sad-monkey.abasthan.app/";
+const DOMAIN = "https://sport-sad-monkey.abasthan.app";
 
 const REDIRECT_URI = `${DOMAIN}/callback`;
 
@@ -327,10 +327,7 @@ app.get("/", (req, res) => {
 app.get("/login", (req, res) => {
   cleanOldStates();
 
-  if (
-    !CLIENT_SECRET ||
-    CLIENT_SECRET === "tS5vOYDIf4aWwZJDtoSCnmAT7M02woPN"
-  ) {
+  if (!CLIENT_SECRET) {
     return res.status(500).send(
       resultPage({
         title: "Configuration Error",
