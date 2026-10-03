@@ -590,10 +590,10 @@ app.get("/callback", async (req, res) => {
 
       try {
 
-        const videoResponse =
-          await fetch(
-            "https://open.tiktokapis.com/v2/video/list/",
-            {
+const videoResponse =
+  await fetch(
+    "https://open.tiktokapis.com/v2/video/list/?fields=id,title,video_description,create_time,cover_image_url,share_url,embed_link",
+    {
               method: "POST",
 
               headers: {
